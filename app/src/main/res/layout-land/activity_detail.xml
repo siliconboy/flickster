@@ -2,25 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@android:color/background_dark"
     android:padding="5dp"
-    tools:context="com.codepath.flickster.DetailActivity">
-
+    android:layout_width="match_parent" android:layout_height="match_parent">
     <RelativeLayout
         android:id="@+id/imageArea"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/ivMovie"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+
             app:srcCompat="@drawable/ic_flickster"
             tools:ignore="ContentDescription" />
 
@@ -35,34 +32,41 @@
             tools:ignore="ContentDescription" />
 
     </RelativeLayout>
-
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageArea"
-        android:layout_centerHorizontal="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white"
-        tools:text="@string/title" />
-
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+        tools:text="Annabelle: Creation"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageArea"
+        android:layout_toEndOf="@+id/imageArea"
+         />
     <TextView
         android:id="@+id/tvDate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTitle"
-        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
         android:textColor="@android:color/darker_gray"
-        tools:text="release date" />
+        tools:text="release date"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignRight="@+id/tvOverview"
+        android:layout_alignEnd="@+id/tvOverview"
+        android:layout_toRightOf="@+id/imageArea"
+        android:layout_toEndOf="@+id/imageArea" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         style="?android:attr/ratingBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvDate"
+        android:layout_toRightOf="@+id/imageArea"
+        android:layout_toEndOf="@+id/imageArea"
         android:isIndicator="true"
         android:numStars="10"
         android:stepSize="0.1" />
@@ -72,9 +76,9 @@
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/ratingBar"
+        android:layout_toRightOf="@+id/imageArea"
+        android:layout_toEndOf="@+id/imageArea"
         android:textColor="@android:color/darker_gray"
         tools:text="Movie Overview" />
 

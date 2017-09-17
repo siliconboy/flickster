@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Flickster</string>
+    <string name="title">movie</string>
+    <string name="pop">Popularity:</string>
+    <string name="date">Release Date:</string>
+    <string name="failure">Could not load movie clip!</string>
 </resources>
