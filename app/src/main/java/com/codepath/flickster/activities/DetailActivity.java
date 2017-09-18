@@ -1,4 +1,4 @@
-package com.codepath.flickster;
+package com.codepath.flickster.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.codepath.flickster.R;
 import com.codepath.flickster.models.Movie;
 import com.squareup.picasso.Picasso;
 

@@ -1,9 +1,10 @@
-package com.codepath.flickster;
+package com.codepath.flickster.activities;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.codepath.flickster.R;
 import com.codepath.flickster.models.Movie;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;

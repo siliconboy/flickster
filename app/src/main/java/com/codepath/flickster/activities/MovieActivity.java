@@ -1,10 +1,11 @@
-package com.codepath.flickster;
+package com.codepath.flickster.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
+import com.codepath.flickster.R;
 import com.codepath.flickster.adapters.MovieArrayAdapter;
 import com.codepath.flickster.models.Movie;
 

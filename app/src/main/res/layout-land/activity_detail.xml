@@ -42,9 +42,9 @@
         android:textAlignment="gravity"
         tools:text="Annabelle: Creation"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageArea"
-        android:layout_toEndOf="@+id/imageArea"
-         />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageArea"/>
     <TextView
         android:id="@+id/tvDate"
         android:layout_width="match_parent"
@@ -86,15 +86,12 @@
         android:id="@+id/tvPop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ratingBar"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/ratingBar"
-        android:layout_toEndOf="@+id/ratingBar"
-        android:layout_toRightOf="@+id/ratingBar"
         android:textColor="@android:color/white"
         android:gravity="right"
         android:textAlignment="gravity"
-        android:text="@string/pop" />
+        android:text="@string/pop"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
